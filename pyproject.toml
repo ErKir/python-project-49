@@ -4,11 +4,15 @@ version = "0.1.0"
 description = "brain games"
 authors = ["ErKir"]
 readme = "README.md"
-packages = [{include = "hexlet_code"}]
+packages = [
+{ include = "brain_games" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
 
 [build-system]
 requires = ["poetry-core"]
