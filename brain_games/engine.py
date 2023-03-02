@@ -9,12 +9,12 @@ def game_engine(rules, round):
     print(greeting)
     name = prompt.string('May I have your name?\n')
     print(f'Hello, {name}!')
+    print(rules)
     round_of_game = 1
     while round_of_game <= number_of_rounds:
         round_of_game += 1
         round_data = round()
         (question, correct_answer) = round_data
-        print(rules)
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         if (user_answer == correct_answer):
@@ -24,4 +24,4 @@ def game_engine(rules, round):
                 f'{user_answer} is wrong answer ;(. Correct answer was {correct_answer}.\nLet\'s try again, {name}!'
             )
             return
-        print(f'Congratulations, {name}!')
+    print(f'Congratulations, {name}!')
