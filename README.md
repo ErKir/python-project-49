@@ -17,3 +17,11 @@ Answer "yes" if the number is *even*, otherwise answer "no".
 Use 'brain-even' command to start.
 
 [![asciicast](https://asciinema.org/a/MBYq4CtaxhIz87gV5kXs7b5P6.svg)](https://asciinema.org/a/MBYq4CtaxhIz87gV5kXs7b5P6)
+
+### Calculator
+
+Calculate the result of the expression.
+
+Use 'brain-calc' command to start.
+
+[![asciicast](https://asciinema.org/a/0sLcYVL3RLCtl1LrDYI9364lH.svg)](https://asciinema.org/a/0sLcYVL3RLCtl1LrDYI9364lH)
