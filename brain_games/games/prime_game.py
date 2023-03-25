@@ -3,7 +3,8 @@ from brain_games.engine import game_engine
 
 
 # the range for random number generator (use int)
-# minimum number is 2, because A prime number is a natural number greater than 1!
+# minimum number is 2, because
+# a prime number is a natural number greater than 1!
 min_number = 2
 max_number = 100
 
