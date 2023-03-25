@@ -33,3 +33,19 @@ Find the greatest common divisor of given numbers.
 Use 'brain-gcd' command to start.
 
 [![asciicast](https://asciinema.org/a/gGlHcc3qGfc95JQ77Jgf1x7LR.svg)](https://asciinema.org/a/gGlHcc3qGfc95JQ77Jgf1x7LR)
+
+### Progression game
+
+Fined a missing number in the progression.
+
+Use 'brain-progression' command to start.
+
+[![asciicast](https://asciinema.org/a/K3tad9qzp5QnAGntnTKfa9nPn.svg)](https://asciinema.org/a/K3tad9qzp5QnAGntnTKfa9nPn)
+
+### Is Prime?
+
+Answer 'yes' if given number is prime, otherwise answer 'no'.
+
+Use 'brain-prime' command to start.
+
+[![asciicast](https://asciinema.org/a/r5EEes9X364FZNYfhne34YTcy.svg)](https://asciinema.org/a/r5EEes9X364FZNYfhne34YTcy)
