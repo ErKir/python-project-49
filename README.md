@@ -25,3 +25,11 @@ Calculate the result of the expression.
 Use 'brain-calc' command to start.
 
 [![asciicast](https://asciinema.org/a/0sLcYVL3RLCtl1LrDYI9364lH.svg)](https://asciinema.org/a/0sLcYVL3RLCtl1LrDYI9364lH)
+
+### Greatest Common Divisor
+
+Find the greatest common divisor of given numbers.
+
+Use 'brain-gcd' command to start.
+
+[![asciicast](https://asciinema.org/a/gGlHcc3qGfc95JQ77Jgf1x7LR.svg)](https://asciinema.org/a/gGlHcc3qGfc95JQ77Jgf1x7LR)
