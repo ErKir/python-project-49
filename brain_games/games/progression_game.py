@@ -34,7 +34,7 @@ def round():
     progression[random_index] = '..'
     string_progression = [str(el) for el in progression]
     question = ' '.join(string_progression)
-    return (RULES_OF_GAME, question, str(answer))
+    return (question, str(answer))
 
 
 def game():
