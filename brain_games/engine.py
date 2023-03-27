@@ -1,10 +1,9 @@
 import prompt
-from brain_games.games.calc_game import game
 # number of game rounds
 NUMBER_OF_ROUNDS = 3
 
 
-def game_engine():
+def game_engine(game):
     game_begin = game()
     (rules, round) = game_begin
     greeting = 'Welcome to the Brain Games!'
