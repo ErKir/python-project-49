@@ -1,24 +1,23 @@
 from brain_games.random_numb import get_random_num
-from brain_games.engine import game_engine
 
 
 # the range for random number generator (use int)
-min_start = 1
-max_start = 10
-min_step = 1
-max_step = 10
-min_length_progression = 5
-max_length_progression = 10
+MIN_START = 1
+MAX_START = 10
+MIN_STEP = 1
+MAX_STEP = 10
+MIN_LENGTH_PROGRESSION = 5
+MAX_LENGTH_PROGRESSION = 10
 
 
-rules_of_game = 'What number is missing in the progression?'
+RULES_OF_GAME = 'What number is missing in the progression?'
 
 
 def get_progression():
-    start = get_random_num(min_start, max_start)
+    start = get_random_num(MIN_START, MAX_START)
     length_progression = get_random_num(
-        min_length_progression, max_length_progression)
-    step = get_random_num(min_step, max_step)
+        MIN_LENGTH_PROGRESSION, MAX_LENGTH_PROGRESSION)
+    step = get_random_num(MIN_STEP, MAX_STEP)
     progression = [start, ]
     current = start
     while length_progression:
@@ -35,8 +34,8 @@ def round():
     progression[random_index] = '..'
     string_progression = [str(el) for el in progression]
     question = ' '.join(string_progression)
-    return (rules_of_game, question, str(answer))
+    return (RULES_OF_GAME, question, str(answer))
 
 
 def game():
-    return game_engine(rules_of_game, round)
+    return (RULES_OF_GAME, round)

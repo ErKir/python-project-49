@@ -1,12 +1,11 @@
 from brain_games.random_numb import get_random_num
-from brain_games.engine import game_engine
 
 
 # the range for random number generator (use int)
-min_number = 1
-max_number = 100
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
-rules_of_game = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULES_OF_GAME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(num):
@@ -14,10 +13,10 @@ def is_even(num):
 
 
 def round():
-    question_numb = get_random_num(min_number, max_number)
+    question_numb = get_random_num(MIN_NUMBER, MAX_NUMBER)
     answer = is_even(question_numb)
     return (question_numb, answer)
 
 
 def game():
-    return game_engine(rules_of_game, round)
+    return (RULES_OF_GAME, round)

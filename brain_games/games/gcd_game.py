@@ -1,12 +1,11 @@
 from brain_games.random_numb import get_random_num
-from brain_games.engine import game_engine
 
 
 # the range for random number generator (use int)
-min_number = 1
-max_number = 100
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
-rules_of_game = 'Find the greatest common divisor of given numbers.'
+RULES_OF_GAME = 'Find the greatest common divisor of given numbers.'
 
 
 def get_gcd(num1, num2):
@@ -16,12 +15,12 @@ def get_gcd(num1, num2):
 
 
 def round():
-    numb1 = get_random_num(min_number, max_number)
-    numb2 = get_random_num(min_number, max_number)
+    numb1 = get_random_num(MIN_NUMBER, MAX_NUMBER)
+    numb2 = get_random_num(MIN_NUMBER, MAX_NUMBER)
     question = f'{numb1} {numb2}'
     answer = get_gcd(numb1, numb2)
     return (question, str(answer))
 
 
 def game():
-    return game_engine(rules_of_game, round)
+    return (RULES_OF_GAME, round)

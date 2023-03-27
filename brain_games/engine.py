@@ -1,17 +1,19 @@
 import prompt
-
+from brain_games.games.calc_game import game
 # number of game rounds
-number_of_rounds = 3
+NUMBER_OF_ROUNDS = 3
 
 
-def game_engine(rules, round):
+def game_engine():
+    game_begin = game()
+    (rules, round) = game_begin
     greeting = 'Welcome to the Brain Games!'
     print(greeting)
     name = prompt.string('May I have your name?\n')
     print(f'Hello, {name}!')
     print(rules)
     round_of_game = 1
-    while round_of_game <= number_of_rounds:
+    while round_of_game <= NUMBER_OF_ROUNDS:
         round_of_game += 1
         round_data = round()
         (question, correct_answer) = round_data
