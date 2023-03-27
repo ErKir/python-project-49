@@ -1,4 +1,4 @@
-from brain_games.scripts.random_numb import get_random_num
+from brain_games.random_numb import get_random_num
 from brain_games.engine import game_engine
 
 
