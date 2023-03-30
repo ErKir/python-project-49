@@ -1,5 +1,4 @@
-from brain_games.random_numb import get_random_num
-
+import random
 
 # the range for random number generator (use int)
 MIN_NUMBER = 1
@@ -10,6 +9,10 @@ OPERATIONS = ['-', '+', '*']
 
 
 RULES_OF_GAME = 'What is the result of the expression?'
+
+
+def get_random_num(min_number, max_number):
+    return random.randint(min_number, max_number)
 
 
 def round():

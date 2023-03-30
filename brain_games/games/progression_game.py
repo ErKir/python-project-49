@@ -1,5 +1,4 @@
-from brain_games.random_numb import get_random_num
-
+import random
 
 # the range for random number generator (use int)
 MIN_START = 1
@@ -11,6 +10,10 @@ MAX_LENGTH_PROGRESSION = 10
 
 
 RULES_OF_GAME = 'What number is missing in the progression?'
+
+
+def get_random_num(min_number, max_number):
+    return random.randint(min_number, max_number)
 
 
 def get_progression():

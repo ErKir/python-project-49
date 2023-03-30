@@ -1,5 +1,4 @@
-from brain_games.random_numb import get_random_num
-
+import random
 
 # the range for random number generator (use int)
 # minimum number is 2, because
@@ -8,6 +7,10 @@ MIN_NUMBER = 2
 MAX_NUMBER = 100
 
 RULES_OF_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
+def get_random_num(min_number, max_number):
+    return random.randint(min_number, max_number)
 
 
 def is_prime(num):
