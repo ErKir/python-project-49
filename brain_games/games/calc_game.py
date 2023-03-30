@@ -1,5 +1,5 @@
 import random
-
+import operator
 # the range for random number generator (use int)
 MIN_NUMBER = 1
 MAX_NUMBER = 20
@@ -20,5 +20,5 @@ def get_question_and_answer():
     numb2 = get_random_num(MIN_NUMBER, MAX_NUMBER)
     operation = OPERATIONS[get_random_num(0, 2)]
     question = f'{numb1} {operation} {numb2}'
-    answer = eval(question)
-    return question, str(answer)
+    answer = str(operator.add(numb1, numb2))
+    return question, answer
