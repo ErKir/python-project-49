@@ -15,7 +15,7 @@ def get_random_num(min_number, max_number):
     return random.randint(min_number, max_number)
 
 
-def round():
+def get_question_and_answer():
     numb1 = get_random_num(MIN_NUMBER, MAX_NUMBER)
     numb2 = get_random_num(MIN_NUMBER, MAX_NUMBER)
     operation = OPERATIONS[get_random_num(0, 2)]
@@ -25,4 +25,4 @@ def round():
 
 
 def game():
-    return (RULES_OF_GAME, round)
+    return (RULES_OF_GAME, get_question_and_answer)

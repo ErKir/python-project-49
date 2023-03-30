@@ -15,11 +15,11 @@ def is_even(num):
     return 'yes' if (num % 2 == 0) else 'no'
 
 
-def round():
+def get_question_and_answer():
     question_numb = get_random_num(MIN_NUMBER, MAX_NUMBER)
     answer = is_even(question_numb)
     return (question_numb, answer)
 
 
 def game():
-    return (RULES_OF_GAME, round)
+    return (RULES_OF_GAME, get_question_and_answer)

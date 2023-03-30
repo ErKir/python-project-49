@@ -30,7 +30,7 @@ def get_progression():
     return progression
 
 
-def round():
+def get_question_and_answer():
     progression = get_progression()
     random_index = get_random_num(0, len(progression) - 1)
     answer = progression[random_index]
@@ -41,4 +41,4 @@ def round():
 
 
 def game():
-    return (RULES_OF_GAME, round)
+    return (RULES_OF_GAME, get_question_and_answer)

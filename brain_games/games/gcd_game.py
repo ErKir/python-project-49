@@ -17,7 +17,7 @@ def get_gcd(num1, num2):
     return get_gcd(num2, num1 % num2)
 
 
-def round():
+def get_question_and_answer():
     numb1 = get_random_num(MIN_NUMBER, MAX_NUMBER)
     numb2 = get_random_num(MIN_NUMBER, MAX_NUMBER)
     question = f'{numb1} {numb2}'
@@ -26,4 +26,4 @@ def round():
 
 
 def game():
-    return (RULES_OF_GAME, round)
+    return (RULES_OF_GAME, get_question_and_answer)
