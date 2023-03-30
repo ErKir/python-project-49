@@ -27,8 +27,4 @@ def is_prime(num):
 def get_question_and_answer():
     question_numb = get_random_num(MIN_NUMBER, MAX_NUMBER)
     answer = is_prime(question_numb)
-    return (str(question_numb), answer)
-
-
-def game():
-    return (RULES_OF_GAME, get_question_and_answer)
+    return str(question_numb), answer

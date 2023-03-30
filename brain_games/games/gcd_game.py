@@ -22,8 +22,4 @@ def get_question_and_answer():
     numb2 = get_random_num(MIN_NUMBER, MAX_NUMBER)
     question = f'{numb1} {numb2}'
     answer = get_gcd(numb1, numb2)
-    return (question, str(answer))
-
-
-def game():
-    return (RULES_OF_GAME, get_question_and_answer)
+    return question, str(answer)

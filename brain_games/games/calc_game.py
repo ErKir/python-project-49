@@ -21,8 +21,4 @@ def get_question_and_answer():
     operation = OPERATIONS[get_random_num(0, 2)]
     question = f'{numb1} {operation} {numb2}'
     answer = eval(question)
-    return (question, str(answer))
-
-
-def game():
-    return (RULES_OF_GAME, get_question_and_answer)
+    return question, str(answer)

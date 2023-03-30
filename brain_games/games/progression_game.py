@@ -37,8 +37,4 @@ def get_question_and_answer():
     progression[random_index] = '..'
     string_progression = [str(el) for el in progression]
     question = ' '.join(string_progression)
-    return (question, str(answer))
-
-
-def game():
-    return (RULES_OF_GAME, get_question_and_answer)
+    return question, str(answer)

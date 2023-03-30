@@ -18,8 +18,4 @@ def is_even(num):
 def get_question_and_answer():
     question_numb = get_random_num(MIN_NUMBER, MAX_NUMBER)
     answer = is_even(question_numb)
-    return (question_numb, answer)
-
-
-def game():
-    return (RULES_OF_GAME, get_question_and_answer)
+    return question_numb, answer
