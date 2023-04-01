@@ -7,15 +7,11 @@ MAX_NUMBER = 100
 RULES_OF_GAME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def get_random_num(min_number, max_number):
-    return random.randint(min_number, max_number)
-
-
 def is_even(num):
     return 'yes' if (num % 2 == 0) else 'no'
 
 
 def get_question_and_answer():
-    question_numb = get_random_num(MIN_NUMBER, MAX_NUMBER)
+    question_numb = random.randint(MIN_NUMBER, MAX_NUMBER)
     answer = is_even(question_numb)
     return question_numb, answer

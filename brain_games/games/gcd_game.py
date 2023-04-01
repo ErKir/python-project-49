@@ -7,10 +7,6 @@ MAX_NUMBER = 100
 RULES_OF_GAME = 'Find the greatest common divisor of given numbers.'
 
 
-def get_random_num(min_number, max_number):
-    return random.randint(min_number, max_number)
-
-
 def get_gcd(num1, num2):
     if (not num2):
         return num1
@@ -18,8 +14,8 @@ def get_gcd(num1, num2):
 
 
 def get_question_and_answer():
-    numb1 = get_random_num(MIN_NUMBER, MAX_NUMBER)
-    numb2 = get_random_num(MIN_NUMBER, MAX_NUMBER)
+    numb1 = random.randint(MIN_NUMBER, MAX_NUMBER)
+    numb2 = random.randint(MIN_NUMBER, MAX_NUMBER)
     question = f'{numb1} {numb2}'
     answer = get_gcd(numb1, numb2)
     return question, str(answer)

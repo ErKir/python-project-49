@@ -12,15 +12,11 @@ MAX_LENGTH_PROGRESSION = 10
 RULES_OF_GAME = 'What number is missing in the progression?'
 
 
-def get_random_num(min_number, max_number):
-    return random.randint(min_number, max_number)
-
-
 def get_progression():
-    start = get_random_num(MIN_START, MAX_START)
-    length_progression = get_random_num(
+    start = random.randint(MIN_START, MAX_START)
+    length_progression = random.randint(
         MIN_LENGTH_PROGRESSION, MAX_LENGTH_PROGRESSION)
-    step = get_random_num(MIN_STEP, MAX_STEP)
+    step = random.randint(MIN_STEP, MAX_STEP)
     progression = [start, ]
     current = start
     while length_progression:
@@ -32,7 +28,7 @@ def get_progression():
 
 def get_question_and_answer():
     progression = get_progression()
-    random_index = get_random_num(0, len(progression) - 1)
+    random_index = random.randint(0, len(progression) - 1)
     answer = progression[random_index]
     progression[random_index] = '..'
     string_progression = [str(el) for el in progression]

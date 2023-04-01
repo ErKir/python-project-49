@@ -9,10 +9,6 @@ MAX_NUMBER = 100
 RULES_OF_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def get_random_num(min_number, max_number):
-    return random.randint(min_number, max_number)
-
-
 def is_prime(num):
     if (num < 2):
         return False
@@ -25,6 +21,6 @@ def is_prime(num):
 
 
 def get_question_and_answer():
-    question_numb = get_random_num(MIN_NUMBER, MAX_NUMBER)
+    question_numb = random.randint(MIN_NUMBER, MAX_NUMBER)
     answer = is_prime(question_numb)
     return str(question_numb), answer
