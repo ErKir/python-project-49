@@ -15,12 +15,12 @@ def is_prime(num):
     i = 2
     while i <= num / 2:
         if num % i == 0:
-            return 'no'
+            return False
         i += 1
-    return 'yes'
+    return True
 
 
 def get_question_and_answer():
     question_numb = random.randint(MIN_NUMBER, MAX_NUMBER)
-    answer = is_prime(question_numb)
+    answer = 'yes' if is_prime(question_numb) else 'no'
     return str(question_numb), answer

@@ -8,10 +8,10 @@ RULES_OF_GAME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(num):
-    return 'yes' if (num % 2 == 0) else 'no'
+    return num % 2 == 0
 
 
 def get_question_and_answer():
     question_numb = random.randint(MIN_NUMBER, MAX_NUMBER)
-    answer = is_even(question_numb)
+    answer = 'yes' if is_even(question_numb) else 'no'
     return question_numb, answer
